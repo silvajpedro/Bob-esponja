@@ -16,27 +16,52 @@ header{
 }
 
 header img{
-    padding-left: 2vw;
-    height:75px;
-    width:100px;
+    position: relative;
+    height:53px;
+    width:53px;
+    left: 20px;
 }
-header figure img:hover{
-    zoom:120%;
-    border: solid;
+/* .bobHeader:hover{
+    transform: scale(120%);
+    cursor: zoom-in;
+    transition: 2s ease-in-out;
+} */
+/* .bobBox:hover{
+    transform: scale(120%);
+    cursor: zoom-in;
+    transition: 2s ease-in-out;
+    border: sold;
+} */
+.bobBox{
+    position: relative;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 75px;
+}
+.bobHeader{  
+    animation:bobZoom 3.5s infinite;
+    animation-delay:3s;
+}
+@keyframes bobZoom{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+    100%{
+        transform: scale(1,1);
+    }
 }
 .menu{
     display: none;
 }
-
-header div{
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
 header nav{
-    width: 70%;
+    position: absolute;
+    left:490px;
+    width: 50%;
 
 }
 
@@ -58,11 +83,8 @@ header input{
     border: solid 2px;
     width: 200px;
     height: 30px;
-    display: flex;
-    justify-content: space-evenly;
    
 }
-
 header input::placeholder{
     color: #636060;
     text-align: center;
@@ -70,6 +92,8 @@ header input::placeholder{
     background-position: 5% 50%;
     background-image: url('./assets/image\ 1.png');
     background-repeat: no-repeat;
+    width: 100px;
+    padding-left:20%;
 }
 main{
     background-color:#FCE5AC;
