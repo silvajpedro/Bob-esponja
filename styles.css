@@ -77,9 +77,11 @@ header li{
     font-size: 28px;
     font-weight: 500;
 }
-
+form{
+    width: 220px;
+}
 header input{
-    border-radius:10px;
+    border-radius:15px;
     border: solid 2px;
     width: 200px;
     height: 30px;
@@ -93,7 +95,7 @@ header input::placeholder{
     background-image: url('./assets/image\ 1.png');
     background-repeat: no-repeat;
     width: 100px;
-    padding-left:20%;
+    padding-left:24.5%;
 }
 main{
     background-color:#FCE5AC;
