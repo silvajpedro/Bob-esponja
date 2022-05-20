@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #128596;  
+    color:#FFF;
+    height: 100px;
+}
+
+header img{
+    padding-left: 2vw;
+    height:75px;
+    width:100px;
+}
+header figure img:hover{
+    zoom:120%;
+    border: solid;
+}
+.menu{
+    display: none;
+}
+
+header div{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header nav{
+    width: 70%;
+
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+    
+}
+
+header li{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+header input{
+    border-radius:10px;
+    border: solid 2px;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+header input::placeholder{
+    color: #636060;
+    text-align: center;
+    background-size: 15px;
+    background-position: 5% 50%;
+    background-image: url('./assets/image\ 1.png');
+    background-repeat: no-repeat;
+}
+main{
+    background-color:#FCE5AC;
+}
+
+.firstSection{
+    display: flex;
+    flex-direction: column;
+    height: 940px;
+    width: 100%;
+}
+.bobImage{
+    position: absolute;
+    background-image: url('./assets/image\ 4.png');
+    top: -18px;
+    height:1180px;
+    width:99.8%;
+    background-size:90%;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+}
+h1{
+    color: #128596;
+    position: relative;
+    left:60px;
+    top:60px ;
+    font-size: 100px;
+    width: 900px;
+}
+p{
+    position: relative;
+    top:120px;
+    left: 60px;
+    color: #D56E0E;
+    width:44%;
+    height: 100px;
+    font-size: 60px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.firstSection p:hover{
+    background-color:#FEBD81;
+}
+
+.secondSection{
+    display: flex;
+    background-color:#E2EFF4 ;
+    height: 1000px;
+    width: 100%;
+    justify-content: center;
+}
+section h2{
+    position: absolute;
+    top:1100px;
+    font-size: 80px;
+    color: #128596;
+}
+.transparentLine{
+    position:relative;
+    top: 150px;
+    left: 235px;
+    border: solid;
+    width: 235px;
+    height: 1px;
+    color: #6989964D;
+} 
+.imagesBox{
+    display: flex;
+    position: absolute;
+    top:1250px;
+    left: 280px;
+    height:790px;
+    width: 54%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imagesBox figure{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #128596; 
+    width: 275px;
+    height: 320px;
+}
+.imagesBox img{
+    width:260px;
+    height: 290px;
+}
+.boxLula:hover::before{
+ content: 'Lula Molusco Vizinho do Bob Esponja';
+ color: #E2EFF4;
+ background-color: #BF7A59;
+ border-radius: 0px 0px 20px 20px;
+ position: absolute;
+ top:0px;
+ width: 275px;
+ height:120px;
+ font-size: 25px;
+ border:none;
+}
+.boxPatrick:hover::before{
+    content: 'Patrick Melhor amigo do Bob Esponja';
+    color: #E2EFF4;
+    background-color: #BF7A59;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top:0px;
+    width: 275px;
+    height:120px;
+    font-size: 25px;
+    border:none;
+}
+.boxSirigueijo:hover::before{
+    content: 'Sr.Sirigueijo Patrão do Bob Esponja';
+    color: #E2EFF4;
+    background-color: #BF7A59;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top:395px;
+    width: 275px;
+    height:100px;
+    font-size: 25px;
+    border:none;
+}
+.boxPlankton:hover::before{
+    content: 'Plankton Inimigo do Sr.Sirigueijo';
+    color: #E2EFF4;
+    background-color: #BF7A59;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top:395px;
+    width: 275px;
+    height:100px;
+    font-size: 25px;
+    border:none;
+}
+figure .patrickImage{
+    width:190px;
+    height:190px;
+}
+figure .planktonImage{
+    width:240px;
+    height:220px;
+}
+.imagesBox button{
+    position: absolute;
+    top:305px;
+    width:100px;
+    height:30px;
+    background-color:#BF7A59;
+    border:none;
+    color: white;
+    border-radius: 5px;
+}
+figure .buttonBottomOne{
+    position: absolute;
+    top:700px;
+}
+footer{
+    background-color: #128596;
+    width: 100%;
+    height: 180px;
+}
+footer figure{
+    position: absolute;
+    display: flex;
+    height:180px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    right:50px;
+}
+footer img{
+    width: 55px;
+    height: 55px;
+}
+footer p{
+    position: absolute;
+    top:2100px;
+    height: 50px;
+    font-size:14px;
+    color: white;
+}
+/* alinhar as imagens da segunda sessão e fazer ajustes na header */
